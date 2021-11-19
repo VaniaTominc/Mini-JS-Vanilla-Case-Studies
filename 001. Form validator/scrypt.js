@@ -40,7 +40,7 @@ const checkLength = (input, min, max) => {
 }
 
 const checkRequired = (inputArr) => {
-  inputArr.forEach(input => {
+  inputArr.map(input => {
     if (input.value.trim() === '') {
       showError(input, `${getFieldName(input)} is required`)
     } else {
